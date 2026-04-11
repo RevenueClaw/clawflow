@@ -113,7 +113,7 @@ function main() {
       const sub = args[1];
       if (sub === 'add') {
         if (args.length < 4) fail('cron add requires <schedule> <command>');
-        cronAdd(args[2], args.slice(3).join(' ');
+        cronAdd(args[2], args.slice(3).join(' '));
       } else if (sub === 'list') {
         cronList();
       } else if (sub === 'remove') {
